@@ -32,20 +32,22 @@ public class Bookmark {
 		this.description = description;
 	}
 
-	public void setAccount(Account account) {
-		this.account = account;
+	public Account getAccount() {
+		return account;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public Long getId() {
+		return id;
 	}
 
-	public void setUri(String uri) {
-		this.uri = uri;
+	public String getUri() {
+		return uri;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public String getDescription() {
+		return description;
 	}
+
+
 	
 }
