@@ -21,8 +21,8 @@ public class RestservicesApplication {
 				"jhoeller,dsyer,pwebb,ogierke,rwinch,mfisher,mpollack,jlong".split(","))
 				.forEach(
 						a -> {
-							Account account = accountRepository.save(new Account(a,
-									"password"));
+							Account account = accountRepository.save(new Account("password",
+									a));
 							bookmarkRepository.save(new Bookmark(account,
 									"http://bookmark.com/1/" + a, "A description"));
 							bookmarkRepository.save(new Bookmark(account,
